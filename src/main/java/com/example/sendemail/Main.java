@@ -39,7 +39,7 @@ public class Main {
         MessageImp message= new MessageImp(yesterday, today);
         sender.send("Test", message.getMessage(), properties.getProperty("recipientEmail"));
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            ex.getMessage();
         }
     }
 }
